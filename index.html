@@ -6,10 +6,122 @@
     <title>weather map</title>
     <link rel="icon" href="https://imgs.search.brave.com/2Zr9nEZwdVSoCGSPr2xR7Y0Ef5Pp14m9mbihTeL9xc4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzA4Lzk4LzY3/LzM2MF9GXzUwODk4/Njc1Nl8wWGhqb1lR/RmRqZTVsRW1tSE5Y/Z2wxcHFuZVZnanB3/ZS5qcGc">
     <link rel="stylesheet" href="style.css">
+    <!-- google icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 </head>
 <body>
+
+  <main class="main-container">
+    <header class="input-container">
+      <input type="text" placeholder="seach city name" class="city-input">
+      <button class="search-btn">
+        <span class="material-symbols-outlined">
+search
+</span>
+      </button>
+    </header>
+
+    <section class="wether-info" style="display: none;">
+      <div class="location-date-container">
+        <div class="location">
+          <span class="material-symbols-outlined">
+location_on
+</span>
+<h4 class="country-txt">Jakarta</h4>
+</div>
+<h5 class="current-date-txt regular-txt">Fri 31 sep</h5>
+      </div>
+
+
+      <div class="wether-summary-container">
+        <img src="" alt="" class="wether-summary">
+        <div class="weather-summary-info">
+          <h1 class="temp-txt">29 °C</h1>
+        </div>
+      </div>
+
+      <div class="weather-conditions-container">
+        <div class="condition-item">
+          <span class="material-symbols-outlined">
+water_drop
+</span>
+<div class="condition-info">
+  <h5 class="regular-txt">humidity</h5>
+  <h5 class="humidity-value-txt">55%</h5>
+</div>
+</div>
+
+
+ <div class="condition-item">
+          <span class="material-symbols-outlined">
+air
+</span>
+
+<div class="condition-info">
+  <h5 class="regular-txt">wind</h5>
+  <h5 class="wind-value-txt">2 m/s</h5>
+</div>
+        </div>
+      </div>
+
+      <div class="forecat-items-container">
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg" class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+
+        <div class="forecast-item">
+          <h5 class="forecast-item-date regular-txt">01 Nov </h5>
+          <img src="assets/weather/thunderstorm.svg"class="forecast-item-img">
+          <h5 class="forecast-item-temp">29 °C</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="search-city section-message">
+      <img src="assets/message/search-city.png" alt="" class="message-img">
+      <h1>search city</h1>
+      <h4 class="regular-txt">
+        find weather condition of 
+      </h4>
+    </section> -->
+
+    <section class="not-city section-message " style="display: none;">
+      <img src="assets/message/not-found.png" alt="" class="message-img">
+      <h1>search city</h1>
+      <h4 class="regular-txt">
+        find weather condition of 
+      </h4>
+    </section>
+  </main>
 
 
   <!-- JS LINK -->
